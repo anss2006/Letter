@@ -1,0 +1,42 @@
+:root {
+  --oxblood: #2b0a12;
+  --aubergine: #1c0f1f;
+  --dusk: #8a4a62;
+  --paper: #f6efe4;
+  --claret: #6b1425;
+  --ink: #50101f;
+  --gold: #e8b96a;
+  --rosegold: #c98f78;
+  --rose: #d98fa0;
+  --champagne: #f2dfc9;
+  --display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --text: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --script: 'Pinyon Script', 'Snell Roundhand', cursive;
+  --open: 0;
+  --close: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  background: var(--oxblood);
+  -webkit-text-size-adjust: 100%;
+}
+
+html.locked,
+html.locked body {
+  overflow: hidden;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--text);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font: inherit; }
